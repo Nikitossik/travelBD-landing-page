@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBD landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popup" id="popup1">
+            <button class="popup-close">
+                <i class="fa-solid fa-square-xmark"></i>
+            </button>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <video src="./videos/video.mp4" controls muted></video>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a class="logo header__logo" href="#">
+                        <img src="./images/logo.svg" alt="TravelBD">
+                    </a>
+                    <nav class="header__menu" id="header-menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">home</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#destination" class="header__link">destination</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#about" class="header__link">about</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#tour" class="header__link">tour</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#contacts" class="header__link">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__item header__link header__link--sign-in">
+                        sign in
+                    </a>
+                    <a href="#" class="header__burger" data-menu="#header-menu">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="explore">
+                <div class="explore__body">
+                    <div class="container">
+                        <h1 class="title explore__title">
+                            Lifelong memories just a few seconds away
+                        </h1>
+                        <p class="subtitle explore__subtitle">
+                            Let’s start your journey with us, your dream will come true
+                        </p>
+                        <a href="#" class="button explore__button">
+                            Explore now
+                        </a>
+                    </div>
+                    <div class="explore__follow">
+                        <p class="explore__follow-text">Follow us</p>
+                        <a class="explore__follow-link" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="explore__follow-link" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <footer class="explore__footer">
+                    <div class="explore__container container">
+                        <p class="explore__tours-text">
+                            the most famous tour spots in BD
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </p>
+                        <div class="explore__tours">
+                            <div class="explore__tour tour-explore">
+                                <div class="tour-explore__preview">
+                                    <a class="tour-explore__play popup-link" href="#popup1">
+                                        <img src="./images/explore/play.svg" alt="">
+                                    </a>
+                                    <img src="./images/explore/tour-1.jpg" alt="">
+                                </div>
+                                <p class="tour-explore__name">Saint Martin</p>
+                            </div>
+                            <div class="explore__tour tour-explore">
+                                <div class="tour-explore__preview">
+                                    <a class="tour-explore__play popup-link" href="#popup1">
+                                        <img src="./images/explore/play.svg" alt="">
+                                    </a>
+                                    <img src="./images/explore/tour-2.jpg" alt="">
+                                </div>
+                                <p class="tour-explore__name">Cox’s Bazar</p>
+                            </div>
+                            <div class="explore__tour tour-explore">
+                                <div class="tour-explore__preview">
+                                    <a class="tour-explore__play popup-link" href="#popup1">
+                                        <img src="./images/explore/play.svg" alt="">
+                                    </a>
+                                    <img src="./images/explore/tour-3.jpg" alt="">
+                                </div>
+                                <p class="tour-explore__name">ratargul Forest</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+            <section class="section about" id="about">
+                <div class="container">
+                    <div class="about__body">
+                        <div class="about__content">
+                            <h2 class="title">About us</h2>
+                            <p class="subtitle">The best travel agency for you</p>
+                            <p class="about__text">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In elementum sit libero, placerat
+                                nibh facilisis in rutrum. Risus, gravida purus nunc
+                                suspendisse. Sit elementum mi, netus in sit. Massa
+                                posuere ac auctor quis elementum.</p>
+                            <a href="#" class="about__read-more">
+                                Read more about us
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="about__image">
+                            <img src="./images/about/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section services padding-bottom">
+                <div class="container">
+                    <h2 class="title">Our services</h2>
+                    <p class="subtitle services__subtitle">We help our clients throughout the trip</p>
+                    <div class="services__body">
+                        <div class="services__item item-service">
+                            <div class="item-service__image">
+                                <img src="./images/services/01.svg" alt="">
+                            </div>
+                            <h3 class="item-service__title">DESTINATIONS</h3>
+                            <p class="item-service__text">Choose any destination
+                                you like, we have several
+                                country ratings</p>
+                        </div>
+                        <div class="services__item item-service">
+                            <div class="item-service__image">
+                                <img src="./images/services/02.svg" alt="">
+                            </div>
+                            <h3 class="item-service__title">TOURS</h3>
+                            <p class="item-service__text">A large number of tours
+                                to different countries for
+                                one or a family</p>
+                        </div>
+                        <div class="services__item item-service">
+                            <div class="item-service__image">
+                                <img src="./images/services/03.svg" alt="">
+                            </div>
+                            <h3 class="item-service__title">LUXURY HOTEL</h3>
+                            <p class="item-service__text">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="services__item item-service">
+                            <div class="item-service__image">
+                                <img src="./images/services/04.svg" alt="">
+                            </div>
+                            <h3 class="item-service__title">ASSISTANCE</h3>
+                            <p class="item-service__text">We are ready to solve all
+                                your questions and help
+                                to deal with problems</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="destination padding-bottom">
+                <div class="destination__form-holder">
+                    <div class="container">
+                        <form action="" class="destination-form">
+                            <label class="destination-form__label" for="#where">Where you want to go?</label>
+                            <input class="destination-form__field" id="where" type="text" placeholder="Where to go?">
+                            <input class="destination-form__field" placeholder="Date" type="date" name="date" id="date">
+                            <div class="select destination-form__field">
+                                <select class="" name="travel-type" id="travel-type">
+                                    <option class="destination-form__field-name" value="" disabled selected hidden>
+                                        Travel Type
+                                    </option>
+                                    <option value="1"></option>
+                                    <option value="2"></option>
+                                    <option value="3"></option>
+                                    <option value="4"></option>
+                                </select>
+                                <span class="focus"></span>
+                            </div>
+
+                            <button class="button destination-form__button" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="title">Our destination</h2>
+                    <p class="subtitle destination__subtitle">choose your next destination</p>
+                    <div class="gallery">
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image"><img src="./images/destination/01.jpg" alt=""></div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image"><img src="./images/destination/02.jpg" alt=""></div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image"><img src="./images/destination/03.jpg" alt=""></div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image"><img src="./images/destination/04.jpg" alt=""></div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image"><img src="./images/destination/05.jpg" alt=""></div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                        <a href="#" class="destination__item gallery-item">
+                            <div class="gallery-item__image">
+                                <img src="./images/destination/06.jpg" alt="">
+                            </div>
+                            <div class="gallery-item__info">
+                                <p class="gallery-item__price">100$</p>
+                                <p class="gallery-item__name">Saint Martin</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="destination__footer">
+                        <div class="pagination">
+                            <p class="pagination__text">Total 10 pages</p>
+                            <div class="pagination__body">
+                                <a href="#" class="pagination__control">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                                <div class="pagination__pages">
+                                    <a href="#" class="pagination__page pagination__page--active">1</a>
+                                    <a href="#" class="pagination__page">2</a>
+                                    <a href="#" class="pagination__page">3</a>
+                                    <a href="#" class="pagination__page">4</a>
+                                    <a href="#" class="pagination__page">5</a>
+                                    <a href="#" class="pagination__page">6</a>
+                                    <a href="#" class="pagination__page">7</a>
+                                    <a href="#" class="pagination__page">8</a>
+                                    <a href="#" class="pagination__page">9</a>
+                                </div>
+                                <a href="#" class="pagination__control">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter__body">
+                        <div class="newsletter__content">
+                            <h2 class="newsletter__title">subscribe our newsletter</h2>
+                            <p class="newsletter__text">Subscribe our newsletter to get offers and about
+                                new places to discover.</p>
+                        </div>
+                        <form class="newsletter__form">
+                            <input class="newsletter__input" type="text" placeholder="Your mail">
+                            <button class="newsletter__button button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews section">
+                <div class="container">
+                    <h2 class="title reviews__title">Reviews</h2>
+                    <p class="subtitle reviews__subtitle">We always ask our clients to leave hones reviews,
+                        on the basis of which you can make a choice</p>
+                    <div class="review">
+                        <div class="review__user-column">
+                            <div class="review__user user-review">
+                                <div class="user-review__avatar">
+                                    <img src="./images/reviews/avatar.jpg" alt="">
+                                </div>
+                                <div class="user-review__info">
+                                    <p class="user-review__name">Rakib Rahman</p>
+                                    <p class="user-review__age">25 y.o</p>
+                                </div>
+                            </div>
+                            <p class="review__tour">
+                                <span>Tour:</span>
+                                cox’s bazar
+                            </p>
+                            <div class="review__images">
+                                <div class="review__image"><img src="./images/reviews/01.jpg" alt=""></div>
+                                <div class="review__image"><img src="./images/reviews/02.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="review__rating-column">
+                            <div class="review__rating rating-review">
+                                <p class="rating-review__name">assistance</p>
+                                <div class="rating-review__progress" data-progress="100%"></div>
+                                <p class="rating-review__value">100%</p>
+                            </div>
+                            <div class="review__rating rating-review">
+                                <p class="rating-review__name">tour quality</p>
+                                <div class="rating-review__progress" data-progress="90%"></div>
+                                <p class="rating-review__value">90%</p>
+                            </div>
+                            <div class="review__rating rating-review">
+                                <p class="rating-review__name">hotel</p>
+                                <div class="rating-review__progress" data-progress="85%"></div>
+                                <p class="rating-review__value">85%</p>
+                            </div>
+                            <div class="review__rating rating-review rating-review--overall">
+                                <p class="rating-review__name rating-review__name--overall" data-progress="100%">overall
+                                    rating:</p>
+                                <div class="rating-review__value rating-review__value--overall">5</div>
+                            </div>
+                        </div>
+                        <div class="review__footer">
+                            <div class="review__quote review__quote--left">
+                                <p>,,</p>
+                            </div>
+                            <div class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
+                                phasellus
+                                faucibus neque fusce nunc in. Posuere lectus
+                                adipiscing netus massa enim, arcu ut. Arcu arcu nunc suspendisse fermentum. Nunc
+                                dictumst
+                                pharetra sed. Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Arcu phasellus faucibus neque fusce nunc
+                                in.
+                            </div>
+                            <div class="review__quote review__quote--right">
+                                ,,
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recent-trips section padding-bottom">
+                <div class="container">
+                    <h2 class="title recent-trips__title">Our recent trips</h2>
+                    <div class="gallery">
+                        <a href="#" class="recent-trip">
+                            <div class="gallery-item">
+                                <div class="gallery-item__image">
+                                    <img src="./images/recent-trips/01.jpg" alt="">
+                                </div>
+                                <div class="gallery-item__info">
+                                    <p class="gallery-item__name">Saint Martin</p>
+                                </div>
+                            </div>
+                            <p class="recent-trip__date">october 19, 2021</p>
+                            <p class="recent-trip__text">Lorem ipsum dolor sit amet, consectet
+                                adipiscing elit.</p>
+                        </a>
+                        <a href="#" class="recent-trip">
+                            <div class="gallery-item">
+                                <div class="gallery-item__image">
+                                    <img src="./images/recent-trips/02.jpg" alt="">
+                                </div>
+                                <div class="gallery-item__info">
+                                    <p class="gallery-item__name">Saint Martin</p>
+                                </div>
+                            </div>
+                            <p class="recent-trip__date">october 19, 2021</p>
+                            <p class="recent-trip__text">Lorem ipsum dolor sit amet, consectet
+                                adipiscing elit.</p>
+                        </a>
+                        <a href="#" class="recent-trip">
+                            <div class="gallery-item">
+                                <div class="gallery-item__image">
+                                    <img src="./images/recent-trips/03.jpg" alt="">
+                                </div>
+                                <div class="gallery-item__info">
+                                    <p class="gallery-item__name">Saint Martin</p>
+                                </div>
+                            </div>
+                            <p class="recent-trip__date">october 19, 2021</p>
+                            <p class="recent-trip__text">Lorem ipsum dolor sit amet, consectet
+                                adipiscing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <div class="footer-about">
+                        <div class="logo footer__logo">
+                            <img src="./images/logo.svg" alt="">
+                        </div>
+                        <h3 class="footer-title footer-about__title">about travelers</h3>
+                        <p class="footer-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque
+                            fringilla faucibus
+                            consectetur in. Curabitur eu,
+                            nunc suspe ndisse duis malesuada. Netus viverra amet montes, rutrum vel pretium. Purus orci
+                            nunc
+                            morbi dolor. Quis
+                            aenean aliquam.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social__link">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fa-brands fa-square-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-menu">
+                        <h3 class="footer-title footer-menu__title">navigations</h3>
+                        <ul class="footer-menu__list">
+                            <li><a href="#" class="footer-menu__link">Home</a></li>
+                            <li><a href="#" class="footer-menu__link">Destination</a></li>
+                            <li><a href="#" class="footer-menu__link">Services</a></li>
+                            <li><a href="#" class="footer-menu__link">About</a></li>
+                        </ul>
+                        <ul class="footer-menu__list">
+                            <li><a href="#" class="footer-menu__link">About Us
+                                </a></li>
+                            <li><a href="#" class="footer-menu__link">Privacy Policy
+                                </a></li>
+                            <li><a href="#" class="footer-menu__link">Contact Us</a></li>
+                            <li><a href="#" class="footer-menu__link">Discounts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3 class="footer-title footer-newsletter__title">subscribe newsletter</h3>
+                        <p class="footer-newsletter__text">Lorem ipsum dolor sit amet, consectetur doler adipiscing
+                            elit.
+                        </p>
+                        <form action="" class="footer-newsletter__form">
+                            <input type="text" class="footer-newsletter__input" placeholder="Enter Email">
+                            <button class="button footer-newsletter__button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>Tour Landing page by <a href="#">ashraful</a> © All Rights Reserved. 2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
